@@ -45,6 +45,8 @@ public class RestUsersController {
         newUser.setBanned(oldUser.getBanned());
         newUser.setIsBanned(oldUser.getIsBanned());
         newUser.setProfilePhoto(oldUser.getProfilePhoto());
+        oldUser.getList().size();
+        newUser.setList(oldUser.getList());
         newUser.setBio(newUser.getBio() == null ? oldUser.getBio() : newUser.getBio());
     }
 

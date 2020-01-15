@@ -49,7 +49,7 @@ public class RestItineraryController {
             createdItinerary = dao.create(itinerary);
         }
      
-        return createdItinerary == null ? new ResponseEntity<Itinerary>(HttpStatus.INTERNAL_SERVER_ERROR) : new ResponseEntity<Itinerary>(createdItinerary, HttpStatus.OK);
+        return createdItinerary == null ? new ResponseEntity<Itinerary>(HttpStatus.INTERNAL_SERVER_ERROR) : new ResponseEntity<Itinerary>(HttpStatus.OK);
     }
     
     /**
